@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfume-Shop</title>
+    <title>E L E C T R O N I C- S H O P</title>
     <!-- CSS LINK -->
     <link rel="stylesheet" href="home.css">
     <!-- FONT AWESOME ICON -->
@@ -20,24 +20,34 @@
 <body>
     <!-- Top-Nav Start -->
     <div class="marq-container">
+        <div>
+            <h5>UPGRADE - YOUR <span style="color: #f9933b;">TECH</span></h5>
+        </div>
         <div class="marq-content">
             <marquee direction="left">
-                <p>Assembled-Desktop || Branded-Desktop || HP-Tower || Lenovo || Asus || Dell || Hp || Dell-Refurbished || Hp-Refurbished || Realme ||
-                    Xioami || Samsung || Oppo || Sony || Graphics-Card || Hard-Disk & SSD || Earphones || Keyboard & Mouse || RAM || Mother-Board
+                <p>Assembled-Desktop || Branded-Desktop || HP-Tower || Lenovo || Asus || Dell || Hp || Dell-Refurbished
+                    || Hp-Refurbished || Realme ||
+                    Xioami || Samsung || Oppo || Sony || Graphics-Card || Hard-Disk & SSD || Earphones || Keyboard &
+                    Mouse || RAM || Mother-Board
                 </p>
             </marquee>
         </div>
+        <div class="navbar-icons">
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-bag-shopping"></i>
+        </div>
     </div>
     <!-- Top-Nav End -->
-
 
     <!-- Navbar Start -->
     <div class="navbar">
         <div class="navbar-container">
             <div class="navbar-logo">
-                <img src="images/nav-logo.png" alt="navlogo">
+                <a href="home.html"><img src="images/nav-logo.png" alt="navlogo"></a>
             </div>
-            <div class="navbar-links">
+
+            <div class="navbar-links" id="navbar-links">
                 <ul>
                     <!-- <li>About</li> -->
                     <li class="dropdown">
@@ -88,10 +98,12 @@
                     <li>Contact</li>
                 </ul>
             </div>
-            <div class="navbar-icons">
-                <i class="fa-regular fa-user"></i>
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-solid fa-bag-shopping"></i>
+
+            <div class="navbar-toggle">
+                <button id="toggle-btn">
+                    <i class="fa fa-bars" id="open-icon"></i>
+                    <i class="fa fa-times" id="close-icon" style="display: none;"></i>
+                </button>
             </div>
         </div>
     </div>
@@ -99,20 +111,39 @@
 
 
     <!-- Banner Start -->
-    <!-- <div class="banner">
+    <div class="banner">
         <div class="bg-img">
-            <img src="images/banner1.jpg" alt="banner-imge">
+            <div class="banner-container">
+                <h1>YOUR ONE - <span style="color: #f9933b;">STOP</span> - TECH HUB</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit beatae, quas omnis dicta rerum
+                    <br>
+                    cupiditate magnam voluptatibus temporibus fugiat repellat officiis facere aperiam eaque quasi illo
+                    quos</p>
+            </div>
         </div>
-        <div class="banner-container">
-            <h1>Welcome</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit beatae, quas omnis dicta rerum <br>
-                cupiditate magnam voluptatibus temporibus fugiat repellat officiis facere aperiam eaque quasi illo
-                quos</p>
-        </div>
-    </div> -->
+    </div>
     <!-- Banner End -->
 
 
+    <script>
+        const toggleButton = document.getElementById('toggle-btn');
+        const navbarLinks = document.getElementById('navbar-links');
+        const openIcon = document.getElementById('open-icon');
+        const closeIcon = document.getElementById('close-icon');
+
+        toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active');
+
+            if (navbarLinks.classList.contains('active')) {
+                openIcon.style.display = 'none';
+                closeIcon.style.display = 'block';
+            } else {
+                openIcon.style.display = 'block';
+                closeIcon.style.display = 'none';
+            }
+        });
+
+    </script>
 
 </body>
 
