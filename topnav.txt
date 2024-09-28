@@ -1,0 +1,80 @@
+<!-- Top-Nav Start -->
+    <div class="marq-container">
+        <div>
+            <h5>UPGRADE - YOUR <span style="color: #f9933b;">TECH</span></h5>
+        </div>
+        <div class="marq-content">
+            <div class="search-container">
+                <input type="text" placeholder="Search products..." class="search-input">
+            </div>
+            <!-- <marquee direction="left">
+                <p>Assembled-Desktop || Branded-Desktop || HP-Tower || Lenovo || Asus || Dell || Hp || Dell-Refurbished
+                    || Hp-Refurbished || Realme ||
+                    Xioami || Samsung || Oppo || Sony || Graphics-Card || Hard-Disk & SSD || Earphones || Keyboard &
+                    Mouse || RAM || Mother-Board
+                </p>
+            </marquee> -->
+        </div>
+        <div class="navbar-icons">
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+    </div>
+    <!-- Top-Nav End -->
+
+
+
+    /* Top-Nav Start */
+.marq-container {
+    background-color: #f3f3f3;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    height: 40px;
+    padding: 1rem;
+    letter-spacing: 1px;
+}
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .marq-container .search-input {
+    width: 100%;
+    padding: 5px 40px 5px 20px;
+    border: 1px solid #949494;
+    border-radius: 20px;
+    font-size: 14px;    
+    letter-spacing: 1px;
+    outline: none;
+    color: #111;
+    margin: 10px 10px;
+  }
+  
+.marq-content {
+    width: 70%;
+}
+
+@media screen and (max-width: 768px) and (max-width:320px) {
+    .marq-container {
+        background-color: #f3f3f3;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 10px;
+        height: 30px;
+        padding: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .marq-content {
+        width: 40%;
+    }
+}
+
+/* Top-Nav End */
