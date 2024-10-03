@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Payment</title>
     <!-- CSS LINK -->
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="payment.css">
     <!-- FONT AWESOME ICON -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <!-- GOOGLE FONT FAMILY -->
@@ -29,13 +29,13 @@
                 <ul>
                     <!-- <li>About</li> -->
                     <!-- <li class="dropdown">
-                        <a href="" class="dropbtn">Desktop</a>
-                        <div class="dropdown-content">
-                            <a href="">Assembled Desktop</a>
-                            <a href="">Branded Desltop</a>
-                            <a href="">HP Tower</a>
-                        </div>
-                    </li> -->
+                    <a href="" class="dropbtn">Desktop</a>
+                    <div class="dropdown-content">
+                        <a href="">Assembled Desktop</a>
+                        <a href="">Branded Desltop</a>
+                        <a href="">HP Tower</a>
+                    </div>
+                </li> -->
                     <li class="dropdown">
                         <a href="" class="dropbtn">Laptop</a>
                         <div class="dropdown-content">
@@ -88,75 +88,73 @@
     </div>
     <!-- Navbar End -->
 
-
-    <!-- Contact us Start -->
-    <div class="contactus">
-        <div class="contactus-container">
-            <div class="contactus-head">
-                <h2><span>Contact <span style="color: #f9933b;">Us</span> </span></h2>
-                <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita<br> at voluptas
-                    atque vitae autem.</p>
-            </div>
-            <div class="all-contactus">
-                <div class="contactus-add">
-                    <div class="map-side">
-                        <div class="contactus-left">
-                            <i class="icofont-location-pin"></i>
-                            <h3>Our Address</h3>
-                            <p>A108 Adam Street, New York, NY 535022</p>
-                        </div>
-                        <div class="contactus-map">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63056.82721812175!2d77.42208846435545!3d8.967383553538989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1727428218471!5m2!1sen!2sin"
-                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </div>
-                    <div class="contactus-right">
-                        <div class="right">
-                            <div class="contactus-mail">
-                                <i class="icofont-email"></i>
-                                <h3>Email Us</h3>
-                                <p>contact@example.com</p>
-                            </div>
-                            <div class="contactus-call">
-                                <i class="icofont-phone"></i>
-                                <h3>Call Us</h3>
-                                <p>+1 5589 55488 55</p>
-                            </div>
-                        </div>
-
-                        <div class="contactus-form">
-                            <form>
-                                <div class="labs">
-                                    <div class="lab1">
-                                        <input style="width: 230px; height:30px;" name="YourName" type="Name"
-                                            placeholder="YourName">
-                                    </div>
-                                    <div class="lab1">
-                                        <input style="width: 230px; height:30px;" name="Your Email" type="email"
-                                            placeholder="Your Email">
-                                    </div>
-                                </div>
-                                <div class="lab2">
-                                    <input style="width: 486px; height:30px;" name="Subject" type="sub"
-                                        placeholder="Subject">
-                                </div>
-                                <div class="lab5">
-                                    <textarea style="width: 486px;" rows="5" name="Message" type="Msg"
-                                        placeholder="Message"></textarea>
-                                </div>
-                                <div class="lab3">
-                                    <button href="button" type="submit">Message
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+    <!-- Bredcrumbs Start -->
+    <div class="bredcrumbs">
+        <div class="bredcrumbs-container">
+            <div class="bredcrumbs-child">
+                <i class="fa-solid fa-home"></i>
+                <h5><a href="/home.html">Home</a></h5>
+                <span>></span>
+                <h5><a href="#" style="color: #f9933b;">Payment-Gateway</a></h5>
             </div>
         </div>
+        <hr>
     </div>
-    <!-- Contact us End -->
+    <!-- Bredcrumbs End -->
+
+
+    <!-- Payment Start -->
+    <div class="payment">
+        <div class="payment-container">
+            <h2>Complete Your<span style="color: #f9933b;">Payment</span></h2>
+
+            <div class="payment-options">
+                <div class="payment-option">
+                    <input type="radio" id="card" name="payment-method" onclick="showDetails('card')">
+                    <label for="card">Credit/Debit Card</label>
+                    <img src="/images/Payment/creditcard.jpg" alt="Card">
+                </div>
+
+                <div class="payment-option">
+                    <input type="radio" id="upi" name="payment-method" onclick="showDetails('upi')">
+                    <label for="upi">UPI Payment</label>
+                    <img src="/images/Payment/upi.jpg" alt="UPI">
+                </div>
+
+                <div class="payment-option">
+                    <input type="radio" id="scanner" name="payment-method">
+                    <label for="scanner">Card Scanner</label>
+                    <img src="/images/Payment/scanner2.png" alt="Card Scanner">
+                </div>
+            </div>
+
+            <!-- Card Details -->
+            <div class="card-details" id="card-details">
+                <div class="input-group">
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" placeholder="1234 5678 9012 3456">
+                </div>
+                <div class="input-group">
+                    <label for="expiry-date">Expiry Date</label>
+                    <input type="text" id="expiry-date" placeholder="MM/YY">
+                </div>
+                <div class="input-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" placeholder="123">
+                </div>
+            </div>
+
+            <div class="upi-details" id="upi-details">
+                <div class="input-group">
+                    <label for="upi-id">Enter UPI ID</label>
+                    <input type="text" id="upi-id" placeholder="yourname@upi">
+                </div>
+            </div>
+
+            <button type="submit">Pay Now</button>
+        </div>
+    </div>
+    <!-- Payment End -->
 
 
 
@@ -241,6 +239,20 @@
         });
 
     </script>
+
+    <script>
+        function showDetails(option) {
+            document.getElementById('card-details').classList.remove('show');
+            document.getElementById('upi-details').classList.remove('show');
+
+            if (option === 'card') {
+                document.getElementById('card-details').classList.add('show');
+            } else if (option === 'upi') {
+                document.getElementById('upi-details').classList.add('show');
+            }
+        }
+    </script>
+
 </body>
 
 </html>

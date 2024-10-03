@@ -186,136 +186,134 @@ i {
 /* Navbar End */
 
 
-
 /* Bredcrumbs Start */
 .bredcrumbs{
-    padding: 1rem 1rem;
-    margin-left: 270px;
+    padding-top: 2rem;
 }
-.bredcrumbs-container h5 a{
+.bredcrumbs-child{
+    display: flex;
+}
+.bredcrumbs-child i,h5,span{
+    margin-left: 1rem;
+}
+.bredcrumbs-child a{
     text-decoration: none;
-    color: #111;
+    color: black;
+}
+.bredcrumbs hr{
+    margin-top: 1rem;
+    /* width: 95%; */
+    color: #646464;
 }
 /* Bredcrumbs End */
 
 
-
-
-
-/* Lenovo Product Start */
-.dellre-right-side{
-    padding-top: 6rem;
+/* Payment Start */
+.payment{
+    padding: 5rem;
 }
-.dellre-product{
-    padding: 1rem;
-    display: flex;
-}
-.dellre-product-filter{
-    background-color: #e6e6e6;
-    width: 20%;
-    padding: 10px;
-    border-radius: 5px;
-    margin-right: 10px;
-}
-.dellre-product-filter{
-    margin-top: 5rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 250px;
-    height: 100%;
-    background-color: #f1f1f1;
+.payment-container {
+    max-width: 768px;
+    margin: 0 auto;
+    background-color: #fff;
     padding: 20px;
-    overflow-y: auto;
-}
-.dellre-product-list{
-    /* width: 80%; */
-    margin-left: 270px;
-}
-.dellre-product-filter h3{
-    margin-bottom: 1rem;
-    font-size: 14px;
-}
-.dellre-product-filter form label{
-    font-size: 14px;
-}
-.dellre-banner-img img{
-    width: 100%;
-    border-radius: 5px;
-}
-.product-one{
-    margin: 1rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .payment-options {
     display: flex;
-    box-shadow: 0 8px 16px rgba(49, 49, 49, 0.295); 
-    padding: 2rem;
-}
-.product-one button{
-    padding: 5px 20px;
-    background: linear-gradient(300deg, #ffffff, #f9933b);
-    border-radius: 20px;
+    flex-direction: column;
+    gap: 15px;   
+  }
+
+  .payment-option {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .payment-option input[type="radio"] {
+    margin-right: 15px;
+  }
+  .payment-option label {
+    flex: 1;
+  }
+
+  .payment-option img {
+    width: 50px;
+  }
+
+  .card-details, .upi-details {
+    display: none;
+    margin-top: 15px;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .input-group {
+    margin-bottom: 15px;
+  }
+
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  button {
+    width: 30%;
+    padding: 12px;
+    background-color: #f0d792;
+    color: #000000;
     border: none;
-}
-.product-text{
-    padding-left: 1rem;
-}
-.product-text h3{
-    font-size: 15px;
-    margin-bottom: 1rem;
-}
-.product-text h5,h6{
-    margin-bottom: 1rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 13rem;
+  }
 
-@media screen and (max-width: 768px) {
-    .dellre-right-side {
-        padding: 1rem;
-    }
-    .bredcrumbs h5 {
-        font-size: 0.9rem;
-    }
-    .dellre-product .product-one {
-        flex-direction: column;
-        align-items: center;
-    }
-    .product-img img {
-        width: 130px;
-    }
-    .product-text h3 {
-        font-size: 1rem;
-        text-align: center;
-    }
-    .product-text h5 {
-        font-size: 0.85rem;
-    }    
-}
+  button:hover {
+    background-color: #ffbb29;
+  }
 
-@media screen and (max-width: 320px) {
-    .dellre-right-side {
-        padding: 0.5rem;
+  @media screen and (max-width: 768px) {
+    .payment-container {
+      padding: 15px;
     }
-    .bredcrumbs h5 {
-        font-size: 0.75rem;
-    }
-    .asus-product .product-one {
-        flex-direction: column;
-        align-items: center;
-    }
-    .product-img img {
-        width: 100px;
-    }
-    .product-text h3 {
-        font-size: 0.9rem;
-        text-align: center;
-    }
-    .product-text h5 {
-        font-size: 0.75rem;
-    }    
-}
+  }
 
-/* Lenovo Product End */
+  @media screen and (max-width: 320px) {
+    h2 {
+      font-size: 20px;
+    }
 
+    .payment-option img {
+      width: 40px;
+    }
+
+    button {
+      font-size: 14px;
+    }
+  }
+/* Payment End */
 
 
 /* Footer Start */
@@ -427,3 +425,6 @@ i {
 }
 
 /* Footer End */
+
+
+
