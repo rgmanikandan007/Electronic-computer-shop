@@ -91,7 +91,7 @@
 
 
     <div class="realme">
-        <div class="realme-filter">
+        <div class="realme-filter filte">
             <h3>Category</h3>
             <form action="/action_page.php">
                 <input type="checkbox">
@@ -116,14 +116,10 @@
 
             <h3>Price</h3>
             <form action="/action_page.php">
-                <input type="checkbox">
-                <label for="lenovo"> ₹5,000 – ₹10,000</label><br>
-                <input type="checkbox">
-                <label for="lenovo"> ₹11,000 – ₹15,000</label><br>
-                <input type="checkbox">
-                <label for="lenovo"> ₹16,000 – ₹20,000</label><br>
-                <input type="checkbox">
-                <label for="lenovo"> ₹22,000 – ₹30,000</label><br>
+                <label for="lenovo"><input type="checkbox" rel="realme5-10" onchange="change()"> ₹5,000 – ₹10,000</label><br>
+                <label for="lenovo"><input type="checkbox" rel="realme11-15" onchange="change()"> ₹11,000 – ₹15,000</label></label><br>
+                <label for="lenovo"><input type="checkbox" rel="realme16-20" onchange="change()"> ₹16,000 – ₹20,000</label></label><br>
+                <label for="lenovo"><input type="checkbox" rel="realme21-30" onchange="change()"> ₹21,000 – ₹30,000</label></label><br>
             </form><br>
             <h3>RAM Size</h3>
             <form action="/action_page.php">
@@ -159,7 +155,7 @@
         </div>
 
 
-        <div class="realme-products">
+        <div class="realme-products result">
             <!-- Bredcrumbs Start -->
             <div class="bredcrumbs">
                 <div class="bredcrumbs-container">
@@ -172,17 +168,18 @@
                 </div>
             </div>
             <!-- Bredcrumbs End -->
+
             <div class="realme-banner-img"><img src="/images/Mobiles/Relame/banner2.jpg" alt="earrings-banner">
             </div>
-            <div class="realme-child-product">
+            <div class="realme-child-product realme11-15">
                 <img src="/images/Mobiles/Relame/realme (1).jpg" alt="realme">
                 <h4>Relame GT 2 Pro</h4>
-                <h4><span>₹ 14,999 </span><del><span style="color: brown;">₹ 15,999
+                <h4><span>₹ 13,999 </span><del><span style="color: brown;">₹ 15,999
                         </span></del><span style="color: green;"> 10%
                         off</span></h4>
                 <a href="/Mobiles/realmecart.html"><button class="add-to-cart-btn">Add to Cart</button></a>
             </div>
-            <div class="realme-child-product">
+            <div class="realme-child-product realme11-15">
                 <img src="/images/Mobiles/Relame/realme (2).webp" alt="realme">
                 <h4>Realme GTNeo 3</h4>
                 <h4><span>₹ 12,999 </span><del><span style="color: brown;">₹ 13,999
@@ -190,7 +187,7 @@
                         off</span></h4>
                         <a href="/Mobiles/realmecart.html"><button class="add-to-cart-btn">Add to Cart</button></a>
             </div>
-            <div class="realme-child-product">
+            <div class="realme-child-product realme16-20">
                 <img src="/images/Mobiles/Relame/realme (3).webp" alt="realme">
                 <h4>Realme 9 Pro+</h4>
                 <h4><span>₹ 20,999 </span><del><span style="color: brown;">₹ 22,999
@@ -198,39 +195,39 @@
                         off</span></h4>
                         <a href="/Mobiles/realmecart.html"><button class="add-to-cart-btn">Add to Cart</button></a>
             </div>
-            <div class="realme-child-product">
+            <div class="realme-child-product realme11-15">
                 <img src="/images/Mobiles/Relame/realme (21).webp" alt="realme">
                 <h4>Realme 9i</h4>
-                <h4><span>₹ 10,999 </span><del><span style="color: brown;">₹ 12,999
+                <h4><span>₹ 11,999 </span><del><span style="color: brown;">₹ 12,999
                         </span></del><span style="color: green;"> 20%
                         off</span></h4>
                         <a href="/Mobiles/realmecart.html"><button class="add-to-cart-btn">Add to Cart</button></a>
             </div>
-            <div class="realme-child-product">
+            <div class="realme-child-product realme5-10">
                 <img src="/images/Mobiles/Relame/realme (5).webp" alt="realme">
                 <h4>Realme 8 Pro</h4>
-                <h4><span>₹ 23,000 </span><del><span style="color: brown;">₹ 25,000
+                <h4><span>₹ 9,000 </span><del><span style="color: brown;">₹ 15,000
                         </span></del><span style="color: green;"> 20%
                         off</span></h4>
                         <a href="/Mobiles/realmecart.html"><button class="add-to-cart-btn">Add to Cart</button></a>
             </div>
-            <div class="realme-child-product">
+            <div class="realme-child-product realme21-30">
                 <img src="/images/Mobiles/Relame/realme (6).webp" alt="realme">
                 <h4>Realme 8 5G</h4>
-                <h4><span>₹ 35,999 </span><del><span style="color: brown;">₹ 38,999
+                <h4><span>₹ 25,999 </span><del><span style="color: brown;">₹ 38,999
                         </span></del><span style="color: green;"> 30%
                         off</span></h4>
                         <a href="/Mobiles/realmecart.html"><button class="add-to-cart-btn">Add to Cart</button></a>
             </div>
-            <div class="realme-child-product">
+            <div class="realme-child-product realme5-10">
                 <img src="/images/Mobiles/Relame/realme (7).webp" alt="realme">
                 <h4>Realme Narzo 50A</h4>
-                <h4><span>₹ 18,999 </span><del><span style="color: brown;">₹ 20,999
+                <h4><span>₹ 8,999 </span><del><span style="color: brown;">₹ 20,999
                         </span></del><span style="color: green;"> 20%
                         off</span></h4>
                         <a href="/Mobiles/realmecart.html"><button class="add-to-cart-btn">Add to Cart</button></a>
             </div>
-            <div class="realme-child-product">
+            <div class="realme-child-product realme21-30">
                 <img src="/images/Mobiles/Relame/realme (8).webp" alt="realme">
                 <h4>Realme Narzo 30 Pro</h4>
                 <h4><span>₹ 25,999 </span><del><span style="color: brown;">₹ 26,999
@@ -238,31 +235,31 @@
                         off</span></h4>
                         <a href="/Mobiles/realmecart.html"><button class="add-to-cart-btn">Add to Cart</button></a>
             </div>
-            <div class="realme-child-product">
+            <div class="realme-child-product realme16-20">
                 <img src="/images/Mobiles/Relame/realme (2).webp" alt="realme">
                 <h4>Realme X7 Pro</h4>
-                <h4><span>₹ 14,000 </span><del><span style="color: brown;">₹ 18,000
+                <h4><span>₹ 17,000 </span><del><span style="color: brown;">₹ 19,000
                         </span></del><span style="color: green;"> 40%
                         off</span></h4>
                         <a href="/Mobiles/realmecart.html"><button class="add-to-cart-btn">Add to Cart</button></a>
             </div>
-            <div class="realme-child-product">
+            <div class="realme-child-product realme11-15">
                 <img src="/images/Mobiles/Relame/realme (17).webp" alt="realme">
                 <h4>Relame 7 Pro</h4>
-                <h4><span>₹ 10,999 </span><del><span style="color: brown;">₹ 12,999
+                <h4><span>₹ 12,999 </span><del><span style="color: brown;">₹ 14,999
                         </span></del><span style="color: green;"> 20%
                         off</span></h4>
                         <a href="/Mobiles/realmecart.html"><button class="add-to-cart-btn">Add to Cart</button></a>
             </div>
-            <div class="realme-child-product">
+            <div class="realme-child-product realme5-10">
                 <img src="/images/Mobiles/Relame/realme (1).jpg" alt="realme">
                 <h4>Realme C35</h4>
-                <h4><span>₹ 13,000 </span><del><span style="color: brown;">₹ 15,000
+                <h4><span>₹ 7,000 </span><del><span style="color: brown;">₹ 11,000
                         </span></del><span style="color: green;"> 20%
                         off</span></h4>
                         <a href="/Mobiles/realmecart.html"><button class="add-to-cart-btn">Add to Cart</button></a>
             </div>
-            <div class="realme-child-product">
+            <div class="realme-child-product realme5-10">
                 <img src="/images/Mobiles/Relame/realme (12).webp" alt="realme">
                 <h4>Realme C25s</h4>
                 <h4><span>₹ 9000 </span><del><span style="color: brown;">₹ 10,000
@@ -270,15 +267,15 @@
                         off</span></h4>
                         <a href="/Mobiles/realmecart.html"><button class="add-to-cart-btn">Add to Cart</button></a>
             </div>
-            <div class="realme-child-product">
+            <div class="realme-child-product realme16-20">
                 <img src="/images/Mobiles/Relame/realme (13).webp" alt="realme">
                 <h4>Realme 7 Pro+</h4>
-                <h4><span>₹ 13,499 </span><del><span style="color: brown;">₹ 14,000
+                <h4><span>₹ 17,499 </span><del><span style="color: brown;">₹ 14,000
                         </span></del><span style="color: green;"> 25%
                         off</span></h4>
                         <a href="/Mobiles/realmecart.html"><button class="add-to-cart-btn">Add to Cart</button></a>
             </div>
-            <div class="realme-child-product">
+            <div class="realme-child-product ">
                 <img src="/images/Mobiles/Relame/realme (19).webp" alt="realme">
                 <h4>Realme 6 Pro</h4>
                 <h4><span>₹ 8000 </span><del><span style="color: brown;">₹ 9000
@@ -286,15 +283,15 @@
                         off</span></h4>
                         <a href="/Mobiles/realmecart.html"><button class="add-to-cart-btn">Add to Cart</button></a>
             </div>
-            <div class="realme-child-product">
+            <div class="realme-child-product realme21-30">
                 <img src="/images/Mobiles/Relame/realme (15).webp" alt="realme">
                 <h4>Realme X3 SuperZoom</h4>
-                <h4><span>₹ 25,999 </span><del><span style="color: brown;">₹ 28,000
+                <h4><span>₹ 23,999 </span><del><span style="color: brown;">₹ 28,000
                         </span></del><span style="color: green;"> 30%
                         off</span></h4>
                         <a href="/Mobiles/realmecart.html"><button class="add-to-cart-btn">Add to Cart</button></a>
             </div>
-            <div class="realme-child-product">
+            <div class="realme-child-product realme16-20">
                 <img src="/images/Mobiles/Relame/realme (17).webp" alt="realme">
                 <h4>Realme V15 5G</h4>
                 <h4><span>₹ 17,999 </span><del><span style="color: brown;">₹ 18,999
@@ -381,6 +378,31 @@
         });
 
     </script>
+
+
+
+<script>
+    function change() {
+        let results = Array.from(document.querySelectorAll('.result > div'));
+        // Hide all results
+        results.forEach(function (result) {
+            result.style.display = 'none';
+        });
+        // Filter results to only those that meet ALL requirements:
+        Array.from(document.querySelectorAll('.filte input[rel]:checked'), function (input) {
+            const attrib = input.getAttribute('rel');
+            results = results.filter(function (result) {
+                return result.classList.contains(attrib);
+            });
+        });
+        // Show those filtered results:
+        results.forEach(function (result) {
+            result.style.display = 'block';
+        });
+    }
+    change();
+</script>
+
 
 </body>
 
