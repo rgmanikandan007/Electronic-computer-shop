@@ -192,7 +192,7 @@ i {
 
 /* Banner Start */
 .bg-img {
-    background: linear-gradient(rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.678)), url(/images/e-banner.jpg) repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.678)), url(images/e-banner.jpg) repeat fixed;
     padding: 10rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -276,7 +276,7 @@ i {
 
 /* Services Start */
 .services-bg {
-    background: linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.719)), url(/images/services.jpg) fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.719)), url(images/services.jpg) fixed;
     padding: 5rem;
     background-size: cover;
     background-repeat: no-repeat;
